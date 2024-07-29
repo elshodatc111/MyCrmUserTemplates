@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Review UI</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .order-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .order-card img {
+            border-radius: 8px;
+            max-width: 100px;
+            max-height: 100px;
+            object-fit: cover;
+        }
+        .order-card .order-info {
+            flex-grow: 1;
+            margin-left: 15px;
+        }
+        .order-card .btn-review {
+            margin-top: auto;
+            margin-bottom: auto;
+            height: 40px;
+        }
+        .order-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container p-2">
+        <div class="row">
+            <div class="col-12">
+                <div class="order-card d-flex align-items-start">
+                    <img src="https://via.placeholder.com/100" alt="Product Image">
+                    <div class="order-info">
+                        <p class="w-100 text-center font-weight-bold">Guruhning nomi</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="w-100 p-0 m-0 text-center">Boshlanishi: 2024.15.12</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="w-100 p-0 m-0 text-center">Yakunlanishi: 2024.15.12</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="w-100 p-0 m-0 text-center">Dars xonasi: 1-xona</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="w-100 p-0 m-0 text-center">Dars vaqti: 15:15</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary btn-review d-flex align-items-center justify-content-center" href="#">
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+                <!-- Repeat for other order cards -->
+                <div class="order-card d-flex align-items-start">
+                    <img src="https://via.placeholder.com/100" alt="Product Image">
+                    <div class="order-info">
+                        <p class="w-100 text-center font-weight-bold">Guruhning nomi</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="w-100 p-0 m-0 text-center">Boshlanishi: 2024.15.12</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="w-100 p-0 m-0 text-center">Yakunlanishi: 2024.15.12</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="w-100 p-0 m-0 text-center">Dars xonasi: 1-xona</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="w-100 p-0 m-0 text-center">Dars vaqti: 15:15</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary btn-review d-flex align-items-center justify-content-center" href="#">
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+                <div class="order-card d-flex align-items-start">
+                    <img src="https://via.placeholder.com/100" alt="Product Image">
+                    <div class="order-info">
+                        <p class="w-100 text-center font-weight-bold">Guruhning nomi</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="w-100 p-0 m-0 text-center">Boshlanishi: 2024.15.12</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="w-100 p-0 m-0 text-center">Yakunlanishi: 2024.15.12</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="w-100 p-0 m-0 text-center">Dars xonasi: 1-xona</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="w-100 p-0 m-0 text-center">Dars vaqti: 15:15</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary btn-review d-flex align-items-center justify-content-center" href="#">
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

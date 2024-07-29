@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Sale</title>
+    <title>To'lovlar</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
+        body {
+            padding-top: 70px;
+            padding-bottom: 60px;
+            background-color: #f8f9fa;
+        }
         .header {
             position: fixed;
             top: 0;
@@ -15,12 +20,10 @@
             background-color: #fff;
             border-bottom: 1px solid #ccc;
             z-index: 1000;
-            padding: 10px 0;
+            padding: 10px 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-left: 20px;
-            padding-right: 20px;
         }
         .bottom-nav {
             position: fixed;
@@ -32,8 +35,7 @@
             display: flex;
         }
         .bottom-nav a {
-            display: inline-block;
-            width: 25%;
+            flex: 1;
             text-align: center;
             padding: 10px 0;
             color: inherit;
@@ -43,25 +45,44 @@
             display: block;
             font-size: 1.5em;
         }
-        .main-content {
-            margin-top: 60px; 
-            margin-bottom: 60px; 
-        }
         .badge {
             position: absolute;
-            top: -50px;
-            right: 0;
-            transform: translate(50%, -50%);
+            top: -10px;
+            right: -10px;
             background-color: red;
             color: white;
             border-radius: 50%;
-            padding: 5px 5px;
-            width: 3px;
-            height: 3px;
+            padding: 5px;
+            font-size: 0.75em;
         }
         .icon-container {
             position: relative;
             display: inline-block;
+        }
+        .main-content {
+            margin-top: 70px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .card .card-info {
+            margin-left: 15px;
+        }
+        .card .btn-action {
+            margin-top: auto;
+            margin-bottom: auto;
+            height: 40px;
+        }
+        .card-info p {
+            margin: 5px 0;
+        }
+        .card-title {
+            font-size: 1.2em;
         }
     </style>
 </head>
@@ -73,40 +94,159 @@
         </div>
         <div>
             <div class="icon-container">
-                <a href="messege.html" class="btn btn-link"><i class="bi bi-chat-dots"></i><span class="badge">.</span></a>
+                <a href="messege.html" class="btn btn-link"><i class="bi bi-chat-dots"></i><span class="badge">1</span></a>
             </div>
             <a href="profel.html" class="btn btn-link"><i class="bi bi-person"></i></a>
         </div>
     </div>
 
-    <div class="main-content">
-        <div class="container mt-4">
+    <div class="main-content pt-3">
+        <div class="container">
             <div class="row">
-                <div class="col-12 my-3">
-                    <div class="card">
-                        <img src="https://new.kdb.uz/storage/news/April2023/yPZ5CZQQllRp6xp5kKPp.jpg" class="card-img-top" style="height:200px">
-                        <div class="card-body">
-                            <h5 class="card-title w-100 text-center">O'quv markaz nomi</h5>
+                <div class="col-12">
+                    <!-- Payment Card 1 -->
+                    <div class="card d-flex align-items-start">
+                        <div class="card-info w-100">
+                            <p class="w-100 text-center font-weight-bold card-title">To'lov nomi</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov miqdori: 100,000 UZS</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov sanasi: 2024.15.12</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov usuli: Click</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">Holati: To'langan</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6 mb-5">
-                    <div class="card">
-                        <img src="https://new.kdb.uz/storage/news/April2023/yPZ5CZQQllRp6xp5kKPp.jpg" class="card-img-top" style="height:350px;">
-                        <div class="card-body">
-                            <h5 class="card-title w-100 text-center">Online kurslar</h5>
-                            <button class="btn btn-primary w-100">Kurslarga o'tish</button>
+
+                    <!-- Payment Card 2 -->
+                    <div class="card d-flex align-items-start">
+                        <div class="card-info w-100">
+                            <p class="w-100 text-center font-weight-bold card-title">To'lov nomi</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov miqdori: 200,000 UZS</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov sanasi: 2024.16.12</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov usuli: PayMe</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">Holati: Kutmoqda</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6 mb-5">
-                    <div class="card">
-                        <img src="https://a-pay.uz/wp-content/uploads/2021/10/1.jpg" class="card-img-top" style="height:350px;">
-                        <div class="card-body">
-                            <h5 class="card-title w-100 text-center">Balansni to'ldirish</h5>
-                            <button class="btn btn-primary w-100">To'lovga o'tish</button>
+                    <!-- Payment Card 2 -->
+                    <div class="card d-flex align-items-start">
+                        <div class="card-info w-100">
+                            <p class="w-100 text-center font-weight-bold card-title">To'lov nomi</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov miqdori: 200,000 UZS</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov sanasi: 2024.16.12</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov usuli: PayMe</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">Holati: Kutmoqda</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- Payment Card 2 -->
+                    <div class="card d-flex align-items-start">
+                        <div class="card-info w-100">
+                            <p class="w-100 text-center font-weight-bold card-title">To'lov nomi</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov miqdori: 200,000 UZS</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov sanasi: 2024.16.12</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov usuli: PayMe</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">Holati: Kutmoqda</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Payment Card 2 -->
+                    <div class="card d-flex align-items-start">
+                        <div class="card-info w-100">
+                            <p class="w-100 text-center font-weight-bold card-title">To'lov nomi</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov miqdori: 200,000 UZS</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov sanasi: 2024.16.12</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov usuli: PayMe</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">Holati: Kutmoqda</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Payment Card 2 -->
+                    <div class="card d-flex align-items-start">
+                        <div class="card-info w-100">
+                            <p class="w-100 text-center font-weight-bold card-title">To'lov nomi</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov miqdori: 200,000 UZS</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov sanasi: 2024.16.12</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov usuli: PayMe</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">Holati: Kutmoqda</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Payment Card 2 -->
+                    <div class="card d-flex align-items-start">
+                        <div class="card-info w-100">
+                            <p class="w-100 text-center font-weight-bold card-title">To'lov nomi</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov miqdori: 200,000 UZS</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov sanasi: 2024.16.12</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">To'lov usuli: PayMe</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="w-100 p-0 m-0 text-center">Holati: Kutmoqda</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional payment cards can be added similarly -->
                 </div>
             </div>
         </div>
