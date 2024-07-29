@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To'lovlar</title>
+    <title>Payments</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         body {
             padding-top: 70px;
-            padding-bottom: 60px;
+            padding-bottom: 70px;
             background-color: #f8f9fa;
         }
         .header {
@@ -20,10 +20,10 @@
             background-color: #fff;
             border-bottom: 1px solid #ccc;
             z-index: 1000;
-            padding: 10px 20px;
+            padding: 10px 0;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
         }
         .bottom-nav {
             position: fixed;
@@ -40,214 +40,84 @@
             padding: 10px 0;
             color: inherit;
             text-decoration: none;
+            font-size: 14px;
         }
         .bottom-nav a .bi {
             display: block;
-            font-size: 1.5em;
-        }
-        .badge {
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            background-color: red;
-            color: white;
-            border-radius: 50%;
-            padding: 5px;
-            font-size: 0.75em;
-        }
-        .icon-container {
-            position: relative;
-            display: inline-block;
+            font-size: 1.3em;
         }
         .main-content {
-            margin-top: 70px;
+            margin-bottom: 70px;
         }
-        .card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
         }
-        .card .card-info {
-            margin-left: 15px;
-        }
-        .card .btn-action {
-            margin-top: auto;
-            margin-bottom: auto;
-            height: 40px;
-        }
-        .card-info p {
-            margin: 5px 0;
-        }
-        .card-title {
-            font-size: 1.2em;
+        @media (min-width: 768px) {
+            .card-img-top {
+                height: 350px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <div>
-            MyCrm
-            <img src="https://path-to-your-logo.jpg" alt="Logo" height="40">
-        </div>
-        <div>
-            <div class="icon-container">
-                <a href="messege.html" class="btn btn-link"><i class="bi bi-chat-dots"></i><span class="badge">1</span></a>
-            </div>
-            <a href="profel.html" class="btn btn-link"><i class="bi bi-person"></i></a>
-        </div>
+        <img src="02.png" alt="Logo" height="40">
     </div>
 
-    <div class="main-content pt-3">
+    <div class="main-content">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Payment Card 1 -->
-                    <div class="card d-flex align-items-start">
-                        <div class="card-info w-100">
-                            <p class="w-100 text-center font-weight-bold card-title">To'lov nomi</p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov miqdori: 100,000 UZS</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov sanasi: 2024.15.12</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov usuli: Click</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">Holati: To'langan</p>
-                                </div>
-                            </div>
+            <h2 class="text-center mb-4">To'lovlar</h2>
+            
+            <div class="card mb-3">
+                <img src="https://via.placeholder.com/800x400?text=To%27lov+Details" class="card-img-top" alt="To'lov Details">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <p><strong>To'lov summasi:</strong> 1,000,000 UZS</p>
+                        </div>
+                        <div class="col-6 text-center">
+                            <p><strong>To'lov vaqti:</strong><br> 2024-07-29 14:00</p>
                         </div>
                     </div>
-
-                    <!-- Payment Card 2 -->
-                    <div class="card d-flex align-items-start">
-                        <div class="card-info w-100">
-                            <p class="w-100 text-center font-weight-bold card-title">To'lov nomi</p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov miqdori: 200,000 UZS</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov sanasi: 2024.16.12</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov usuli: PayMe</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">Holati: Kutmoqda</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Payment Card 2 -->
-                    <div class="card d-flex align-items-start">
-                        <div class="card-info w-100">
-                            <p class="w-100 text-center font-weight-bold card-title">To'lov nomi</p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov miqdori: 200,000 UZS</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov sanasi: 2024.16.12</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov usuli: PayMe</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">Holati: Kutmoqda</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Payment Card 2 -->
-                    <div class="card d-flex align-items-start">
-                        <div class="card-info w-100">
-                            <p class="w-100 text-center font-weight-bold card-title">To'lov nomi</p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov miqdori: 200,000 UZS</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov sanasi: 2024.16.12</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov usuli: PayMe</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">Holati: Kutmoqda</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Payment Card 2 -->
-                    <div class="card d-flex align-items-start">
-                        <div class="card-info w-100">
-                            <p class="w-100 text-center font-weight-bold card-title">To'lov nomi</p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov miqdori: 200,000 UZS</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov sanasi: 2024.16.12</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov usuli: PayMe</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">Holati: Kutmoqda</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Payment Card 2 -->
-                    <div class="card d-flex align-items-start">
-                        <div class="card-info w-100">
-                            <p class="w-100 text-center font-weight-bold card-title">To'lov nomi</p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov miqdori: 200,000 UZS</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov sanasi: 2024.16.12</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov usuli: PayMe</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">Holati: Kutmoqda</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Payment Card 2 -->
-                    <div class="card d-flex align-items-start">
-                        <div class="card-info w-100">
-                            <p class="w-100 text-center font-weight-bold card-title">To'lov nomi</p>
-                            <div class="row">
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov miqdori: 200,000 UZS</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov sanasi: 2024.16.12</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">To'lov usuli: PayMe</p>
-                                </div>
-                                <div class="col-6">
-                                    <p class="w-100 p-0 m-0 text-center">Holati: Kutmoqda</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Additional payment cards can be added similarly -->
                 </div>
+            </div>
+
+            <div class="card mb-3">
+                <img src="https://via.placeholder.com/800x400?text=To%27lov+Details" class="card-img-top" alt="To'lov Details">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <p><strong>To'lov summasi:</strong> 1,000,000 UZS</p>
+                        </div>
+                        <div class="col-6 text-center">
+                            <p><strong>To'lov vaqti:</strong><br> 2024-07-29 14:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <img src="https://via.placeholder.com/800x400?text=To%27lov+Details" class="card-img-top" alt="To'lov Details">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <p><strong>To'lov summasi:</strong> 1,000,000 UZS</p>
+                        </div>
+                        <div class="col-6 text-center">
+                            <p><strong>To'lov vaqti:</strong><br> 2024-07-29 14:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 text-center">
+                <img src="https://cdni.iconscout.com/illustration/premium/thumb/searching-file-illustration-download-in-svg-png-gif-formats--data-finding-something-business-pack-people-illustrations-3414904.png?f=webp" class="card-img-top" alt="Balansni to'ldirish">
+                <br><br>
+                <p>Sizda to'lovlar mavjud emas.</p>
+                <button class="btn btn-primary w-100">
+                    <i class="bi bi-credit-card"></i> To'lovga o'tish
+                </button>
             </div>
         </div>
     </div>
@@ -265,9 +135,9 @@
             <i class="bi bi-currency-dollar"></i>
             <span>To'lovlar</span>
         </a>
-        <a href="test.html" class="nav-link">
-            <i class="bi bi-patch-question"></i>
-            <span>Testlar</span>
+        <a href="profel.html" class="nav-link">
+            <i class="bi bi-person"></i>
+            <span>Profil</span>
         </a>
     </div>
 

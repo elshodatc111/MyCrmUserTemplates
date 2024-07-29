@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To'lov Tizimi</title>
+    <title>Test Page</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         body {
             padding-top: 70px;
-            padding-bottom: 60px;
+            padding-bottom: 70px;
             background-color: #f8f9fa;
         }
         .header {
@@ -20,73 +20,120 @@
             background-color: #fff;
             border-bottom: 1px solid #ccc;
             z-index: 1000;
-            padding: 10px 20px;
+            padding: 10px 0;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
+        }
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            border-top: 1px solid #ccc;
+            display: flex;
+        }
+        .bottom-nav a {
+            flex: 1;
+            text-align: center;
+            padding: 10px 0;
+            color: inherit;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .bottom-nav a .bi {
+            display: block;
+            font-size: 1.3em;
         }
         .main-content {
-            margin-top: 20px;
-            padding: 20px;
-        }
-        .payment-section {
-            margin-bottom: 20px;
-        }
-        .payment-section h2 {
-            font-size: 1.5em;
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            font-weight: bold;
-        }
-        @media (max-width: 576px) {
-            .header h4 {
-                font-size: 1.2em;
-            }
-            .payment-section h2 {
-                font-size: 1.2em;
-            }
-            .btn-link i {
-                font-size: 1.2em;
-            }
+            margin-bottom: 70px;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <div>
-            <a href="index.html" class="btn btn-link"><i class="bi bi-reply"></i></a>
-        </div>
-        <div>
-            <h4>To'lov Tizimi</h4>
-        </div>
+        <img src="02.png" alt="Logo" height="40">
     </div>
 
     <div class="main-content">
         <div class="container">
-            <div class="payment-section">
-                <h2>Karta Ma'lumotlari</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="cardNumber">Karta Raqami:</label>
-                        <input type="text" class="form-control" id="cardNumber" placeholder="Karta raqamingizni kiriting">
+            <h2 class="text-center mb-4">Test Page</h2>
+            
+            <form>
+                <!-- Question 1 -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">1. What is the capital of France?</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1a" value="A">
+                            <label class="form-check-label" for="q1a">A. Berlin</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1b" value="B">
+                            <label class="form-check-label" for="q1b">B. Madrid</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1c" value="C">
+                            <label class="form-check-label" for="q1c">C. Paris</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1d" value="D">
+                            <label class="form-check-label" for="q1d">D. Rome</label>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="cardName">Karta Egasi Nomi:</label>
-                        <input type="text" class="form-control" id="cardName" placeholder="Karta egasi nomini kiriting">
+                </div>
+
+                <!-- Add more questions here in the same format -->
+                <!-- Question 2 -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">2. Which planet is known as the Red Planet?</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2a" value="A">
+                            <label class="form-check-label" for="q2a">A. Earth</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2b" value="B">
+                            <label class="form-check-label" for="q2b">B. Mars</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2c" value="C">
+                            <label class="form-check-label" for="q2c">C. Jupiter</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2d" value="D">
+                            <label class="form-check-label" for="q2d">D. Saturn</label>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="expiryDate">Amal Qilish Muddati:</label>
-                        <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY formatida kiriting">
-                    </div>
-                    <div class="form-group">
-                        <label for="cvv">CVV:</label>
-                        <input type="text" class="form-control" id="cvv" placeholder="CVV kodini kiriting">
-                    </div>
-                    <button type="submit" class="btn btn-primary">To'lovni Tasdiqlash</button>
-                </form>
-            </div>
+                </div>
+
+                <!-- Add questions 3 to 15 in the same format -->
+
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary">Submit Answers</button>
+                </div>
+            </form>
         </div>
+    </div>
+
+    <div class="bottom-nav">
+        <a href="index.html" class="nav-link">
+            <i class="bi bi-house-door"></i>
+            <span>Bosh sahifa</span>
+        </a>
+        <a href="cours.html" class="nav-link">
+            <i class="bi bi-book"></i>
+            <span>Guruhlar</span>
+        </a>
+        <a href="tulov.html" class="nav-link">
+            <i class="bi bi-currency-dollar"></i>
+            <span>To'lovlar</span>
+        </a>
+        <a href="profil.html" class="nav-link">
+            <i class="bi bi-person"></i>
+            <span>Profil</span>
+        </a>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
